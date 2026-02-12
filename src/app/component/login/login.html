@@ -3,8 +3,7 @@
     <label for="userId">User ID:</label>
     <input type="number" id="userId" name="userId" ngModel required>
   </div>
-  
   <div>
-    <button type="submit" [disabled]="!userForm.valid" routerLink="dashboard">Submit</button>
+    <button type="submit" [disabled]="!userForm.valid">Submit</button>
   </div>
 </form>

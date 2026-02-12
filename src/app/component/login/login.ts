@@ -1,21 +1,21 @@
-import { Component, inject} from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { Accountholderservice } from '../../service/accountholderservice';
+import { Dashboard } from '../dashboard/dashboard';
 
 @Component({
   selector: 'app-login',
   standalone: false,
   templateUrl: './login.html',
-  styleUrl: './login.css',
+  styleUrls: ['./login.css'],
 })
 export class Login {
- 
- router=inject(Router)
- service=inject(Accountholderservice)
+  router = inject(Router);
+  service = inject(Accountholderservice);
 
   onSubmit(form: any) {
-  alert("User ID submitted: "+form.value.userId);
-    this.router.navigate(['/dashboard']);
-    this.service.id=form.value.userId;
+    const userId = Number(form.value.userId);
+    this.router.navigate(['/dashboard', userId]);
+  
   }
 }

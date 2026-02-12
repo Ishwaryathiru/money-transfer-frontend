@@ -2,16 +2,30 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Login } from './component/login/login';
 import { Dashboard } from './component/dashboard/dashboard';
+import { Transfer } from './component/transfer/transfer';
+
+import { Profile } from './component/profile/profile';
+import { History } from './component/history/history';
 
 const routes: Routes = [
   {
     path:"login",
     component:Login
   },
-  {
-    path:"dashboard",
-    component:Dashboard
-  }
+  { 
+    path: 'dashboard/:id', 
+    component: Dashboard 
+  },
+  // Transfer
+  { path: 'transfer/:id', component: Transfer },
+
+  // History
+  { path: 'history/:id', component: History },
+
+  // Profile
+  { path: 'profile/:id', component: Profile },
+
+
 ];
 
 @NgModule({

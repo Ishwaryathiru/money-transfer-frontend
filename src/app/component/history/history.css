@@ -1,0 +1,102 @@
+.page {
+  min-height: 100vh;
+  background: #f6f8fb;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.shell {
+  width: 100%;
+  max-width: 980px;
+  background: #fff;
+  border: 1px solid #eef2f7;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+  padding: 18px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.sub {
+  margin-top: 4px;
+  color: #667085;
+  font-size: 13px;
+}
+
+.loading, .empty {
+  margin-top: 16px;
+  color: #667085;
+}
+
+.tx-table {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+}
+
+.tx-table th, .tx-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #eef2f7;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tx-table th {
+  color: #475467;
+  font-weight: 700;
+  background: #fafbff;
+}
+
+.right {
+  text-align: right;
+}
+
+.chip {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.chip.credit {
+  background: #eafaf0;
+  color: #067647;
+}
+
+.chip.debit {
+  background: #ffecec;
+  color: #b42318;
+}
+
+.amt-credit {
+  color: #067647;
+  font-weight: 800;
+}
+
+.amt-debit {
+  color: #b42318;
+  font-weight: 800;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.badge.ok {
+  background: #ecfdf3;
+  color: #067647;
+}
+
+.badge.bad {
+  background: #fff1f3;
+  color: #b42318;
+}
